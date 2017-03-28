@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="mycss.css">
+
+  </head>
+
+  <body>
+    <h1>Daily Activate</h1>
+
+     <div>
+
+    <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+      <button onclick="handlers.addTodo()">Add Activate</button>
+      <input id="addTodoTextInput" type="text">
+    </div>
+
+    <div>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <input id="changeTodoPositionInput" type="number">
+      <input id="changeTodoTextInput" type="text">
+    </div>
+
+	<div>
+      <button onclick="handlers.deleteTodo()">Delete</button>
+      <input id="deleteTodoPositionInput" type="number">
+    </div>
+
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+      <input id="toggleCompletedPositionInput" type="number"><br><br>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <input type="button" value="Set Alarm" onclick="openAlarmForm()">
+	<div id="setalarm" style="display:none">
+    Set Hour: <input type="number" id="sethour"><br><br>
+    Set Minute:  <input type="number" id="setminute"><br><br>
+    Reminder For: <input type="text" id="setreason"><br><br>
+    <button onclick="setAlarm()">Activate Alarm</button>
+    </div>
+
+ <script src="cordova.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
